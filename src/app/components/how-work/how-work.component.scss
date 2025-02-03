@@ -1,0 +1,35 @@
+section {
+
+
+    .paragrahAboutWork {
+        color: #C98A40;
+        height: 100vh;
+        background-image: url('../../../assets/images/bg.png');
+        background-size: cover;
+        background-position: 100% 100%;
+    }
+
+    .paragrahAboutHowWork {
+        height: 100vh;
+        background-image: url('../../../assets/images/bgImageforsection.png');
+        background-size: contain;
+        background-position: 90% 90%;
+
+        h2 {
+            font-size: 8.3em;
+            font-weight: bold;
+        }
+    }
+
+    .aboutWork {
+        position: absolute;
+        top: 43%;
+        // left: 50%;
+    }
+    button{
+        // transform:translateY(-150%) ;
+        position: absolute;
+        bottom: 25px;
+        
+    }
+}

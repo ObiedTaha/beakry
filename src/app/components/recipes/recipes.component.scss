@@ -1,0 +1,18 @@
+section {
+    h2 {
+        color: #C98A40;
+        font-size: 7rem;
+        font-weight: 800;
+    }
+
+    .card {
+        border:1px groove   #C98A40;
+        border-radius:30PX ;
+        .card-title {
+            color: #C98A40;
+            font-size: 28px;
+            font-weight: 900;
+            text-align: left;
+        }
+    }
+}

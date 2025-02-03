@@ -1,0 +1,35 @@
+section {
+
+    .leftCaption {
+        padding: 40px;
+        background-image: url('../../../assets/images/bgImageforsection.png');
+        background-size: contain;
+        background-position: 90% 90%;
+        vertical-align: middle;
+
+        // background-repeat: no-repeat;
+        h2 {
+            font-size: 100px;
+            font-weight: 800;
+            text-align: left;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 20px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+        }
+
+        .chiefImg {
+            position: absolute;
+            right: 0;
+
+            img {
+                width: 72%;
+            }
+        }
+    }
+}

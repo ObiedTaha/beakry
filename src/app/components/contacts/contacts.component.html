@@ -1,0 +1,70 @@
+<section class="pb-5">
+    <div class="caption pb-5">
+        <h2 class="text-center">CONTACT US</h2>
+    </div>
+    <div class="row p-0 m-0 justify-content-center align-items-center ">
+        <div class="col-md-3 ">
+            <form action="" [formGroup]="signupForm" (ngSubmit)="handelSignup(signupForm)">
+
+                <div class="pb-2">
+                    <input #inputName formControlName="name" type="text" name="name" class="form-control" id="name"
+                        placeholder="Full Name">
+                </div>
+                <!-- handel error with regex and use realtime calidation -->
+                <div class="alet"
+                    *ngIf="signupForm.get('name')?.errors && ( signupForm.get('name')?.touched || inputName.value.length>0) ">
+                    <p class="fs-sm text-muted" *ngIf="signupForm.get('name')?.getError('required')"><span
+                            class="text-danger">*</span> Required</p>
+                    <p class="fs-sm text-muted" *ngIf="signupForm.get('name')?.getError('minlength')"><span
+                            class="text-danger">*</span> Min length 3 letter</p>
+                    <p class="fs-sm text-muted" *ngIf="signupForm.get('name')?.getError('maxlength')"><span
+                            class="text-danger">*</span> Max length 20 letter</p>
+                </div>
+
+                <div class="pb-2">
+                    <input #inputName formControlName="email" type="text" name="email" class="form-control" id="email"
+                        placeholder="Email">
+                </div>
+                <!-- handel error with regex and use realtime calidation -->
+                <div class="alet"
+                    *ngIf="signupForm.get('email')?.errors && ( signupForm.get('email')?.touched || inputName.value.length>0) ">
+                    <p class="fs-sm text-muted" *ngIf="signupForm.get('email')?.getError('required')"><span
+                            class="text-danger">*</span> Required</p>
+                    <p class="fs-sm text-muted" *ngIf="signupForm.get('email')?.getError('email')"><span
+                            class="text-danger">*</span> Write Valid Email</p>
+                </div>
+
+                <div class="pb-2">
+                    <input #inputPhone formControlName="phone" type="text" name="phone" class="form-control" id="phone"
+                        placeholder="Phone Number">
+                </div>
+                <!-- handel error with regex and use realtime calidation -->
+                <div class="alet"
+                    *ngIf="signupForm.get('phone')?.errors && ( signupForm.get('phone')?.touched || inputPhone.value.length>0) ">
+                    <p class="fs-sm text-muted" *ngIf="signupForm.get('phone')?.getError('required')"><span
+                            class="text-danger">*</span> Required</p>
+                    <p class="fs-sm text-muted" *ngIf="signupForm.get('phone')?.getError('pattern')"><span
+                            class="text-danger">*</span> Accept only Egypt number </p>
+                </div>
+
+                <div class="text-center">
+                    <button class="btn">SEND</button>
+                </div>
+            </form>
+
+        </div>
+        <div class="col-md-3 offset-1">
+            <div class="">
+                <div class="pb-5">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span class="px-4">upskilling.eg1 @ gmail.com</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <span class="px-4">+20 115 493 2137</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>

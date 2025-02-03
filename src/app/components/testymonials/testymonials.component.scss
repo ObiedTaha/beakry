@@ -1,0 +1,40 @@
+section {
+    .testymonials {
+        background-color: #c98a40;
+        background-image: url('../../../assets/images/Mask_Group.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        h2 {
+            color: #fff;
+            font-size: 6rem;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 12px;
+            font-weight: 400;
+            // line-height: 25px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+        }
+
+        .cardReview {
+            border-radius: 25px;
+            padding: 30px 50px 30px 50px;
+
+            h6 {
+                color: #c98a40;
+                font-weight: 700;
+            }
+
+            .icon {
+                color: #c98a40;
+            }
+
+        }
+    }
+
+}

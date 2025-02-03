@@ -1,0 +1,25 @@
+<section>
+    <div>
+        <h2 class="text-center py-3">RECIPES</h2>
+        <div class="row justify-content-center py-3 m-0">
+            <div class="col-md-3" *ngFor="let recipe of recipes.slice(0, 3)">
+                <div class="card ">
+                    <img [src]="recipe.strMealThumb" class="card-img-top rounded-4"
+                        style="height: 250px; object-fit: cover;" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title py-2"> {{recipe.strMeal}} </h5>
+                        <p class="card-text p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+                            quia
+                            tempore possimus repudiandae voluptatibus sapiente, architecto sequi culpa animi nihil
+                            obcaecati, nesciunt suscipit odio quisquam dolore molestiae eius voluptate, cum accusantium
+                            magni corporis quo veritatis? Consequatur, id!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <button class="btn  btnDecoration">CONTACT US</button>
+        </div>
+    </div>
+</section>
