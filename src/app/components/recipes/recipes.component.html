@@ -3,8 +3,8 @@
         <h2 class="text-center py-3">RECIPES</h2>
         <div class="row justify-content-center py-3 m-0">
             <div class="col-md-3" *ngFor="let recipe of recipes.slice(0, 3)">
-                <div class="card ">
-                    <img [src]="recipe.strMealThumb" class="card-img-top rounded-4"
+                <div class="card rounded-5">
+                    <img [src]="recipe.strMealThumb" class="card-img-top rounded-5"
                         style="height: 250px; object-fit: cover;" alt="...">
                     <div class="card-body">
                         <h5 class="card-title py-2"> {{recipe.strMeal}} </h5>
